@@ -7,7 +7,7 @@
 - Hugo v0.165.0 extended
 - 主题: PaperMod(已 inline,锁定 commit `d3768854`)
 - 托管: Cloudflare Pages
-- 域名: `https://fn.028317.xyz/`
+- 域名: `https://pangxs.com/`
 
 ## 目录结构
 
