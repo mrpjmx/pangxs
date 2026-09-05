@@ -1,0 +1,2 @@
+# Theme 自带 .git 当子模块时的产物,这里我们 inline 整个目录
+/.git
