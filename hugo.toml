@@ -1,0 +1,209 @@
+# MR.PANG - 庞老师的自留地
+# PaperMod 主题配置
+# Author: 庞老师
+
+baseURL = "https://fn.028317.xyz/"
+title = "MR.PANG"
+copyright = "© 2026 庞老师 / MR.PANG"
+theme = "PaperMod"
+
+# 启用功能
+enableInlineShortcodes = true
+enableRobotsTXT = true
+enableEmoji = true
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# 主内容类型
+mainSections = ["posts", "docs"]
+
+# 分页
+pagination.pagerSize = 10
+
+# 中文为主
+defaultContentLanguage = "zh-cn"
+
+# 中文菜单
+[languages.zh-cn]
+label = "简体中文"
+weight = 1
+title = "MR.PANG"
+taxonomies.category = "分类"
+taxonomies.tag = "标签"
+taxonomies.series = "系列"
+
+# 英文备用
+[languages.en]
+label = "English"
+weight = 2
+title = "MR.PANG"
+
+# 全站菜单
+[[menu.main]]
+identifier = "home"
+name = "首页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+identifier = "posts"
+name = "文章"
+url = "/posts/"
+weight = 2
+
+[[menu.main]]
+identifier = "tags"
+name = "标签"
+url = "/tags/"
+weight = 3
+
+[[menu.main]]
+identifier = "archive"
+name = "归档"
+url = "/archives/"
+weight = 4
+
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "/search/"
+weight = 5
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 6
+
+# PaperMod 主题参数
+[params]
+env = "production"
+description = "庞老师的自留地 - 记录折腾 / 摩旅 / 工作 / 生活"
+keywords = ["Hugo", "PaperMod", "自留地", "庞老师", "摩旅"]
+
+# PaperMod 配置
+[params.assets]
+favicon = "/favicon.ico"
+
+[params.assets.disableScrollBarStyle]
+
+# 主页信息模式(可选)
+[params.homeInfoParams]
+Title = "自留地"
+Content = """
+这里是庞老师的自留地。
+记录飞牛系统折腾 / 摩旅老登运营 / 学校信息化工作 / 偶尔的生活。
+"""
+
+# 作者社交账号(按需填写)
+[[params.socialIcons]]
+name = "github"
+title = "GitHub"
+url = "https://github.com/mrpjmx"
+
+# 搜索
+[[params.socialIcons]]
+name = "rss"
+title = "RSS"
+url = "/index.xml"
+
+# 默认主题:auto / light / dark
+[params.colorScheme]
+# default = "auto"
+# auto = ["#color1", "#color2"]  # 浅色 + 深色主题颜色
+
+# 主页布局:page (默认) / homeinfo / profile
+[params.layout]
+defaultBackground = "white"
+
+# 菜单配置(profileMode 默认禁用)
+[params.profileMode]
+enabled = false
+title = ""
+subtitle = ""
+imageUrl = ""
+imageTitle = ""
+
+# 显示代码块按钮
+[params.assets.favicons]
+# sizes = []
+# icon = "/favicon.ico"
+# type = "image/x-icon"
+
+# Cover image
+[params.cover]
+hidden = false
+# hiddenInList = false
+# hiddenInSingle = false
+
+# 标签
+[params.label]
+# text = ""
+# icon = ""
+
+# 字数统计
+# wordCount.enable = true
+# wordCount.valuesToCount = ["words"]
+
+# 标记(Markup)配置
+[markup]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noClasses = false
+# anchorLineNos = false
+codeFences = true
+guessSyntax = true
+lineNos = true
+lineNumbersInTable = true
+tabWidth = 2
+
+# 服务端文件(对搜索引擎屏蔽)
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+term = ["HTML"]
+
+# 媒体类型
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
+
+# 输出格式
+[outputFormats]
+[outputFormats.RSS]
+mediaType = "application/rss+xml"
+baseName = "index"
+[outputFormats.JSON]
+mediaType = "application/json"
+
+# 别名
+[permalinks]
+posts = "/posts/:slug/"
+page = "/:slug/"
+
+# 服务
+[server]
+[[server.headers]]
+for = "/**"
+[server.headers.values]
+X-Frame-Options = "DENY"
+X-XSS-Protection = "1; mode=block"
+X-Content-Type-Options = "nosniff"
+Referrer-Policy = "strict-origin-when-cross-origin"
+
+# 隐私 / 杂项
+[privacy]
+disqus = { disable = true }
+googleAnalytics = { disable = true }
+instagram = { disable = true }
+twitter = { disable = true }
+vimeo = { disable = true }
+youtube = { disable = true }
