@@ -1,3 +1,37 @@
 {{- /* Comments area start */ -}}
-{{- /* to add comments read => https://gohugo.io/content-management/comments/ */ -}}
+{{- /* Twikoo 评论系统 - 服务端 comment.pangxs.com (Twikoo 1.7.20 自部署) */ -}}
+<div id="twikoo-container" class="mt-5"></div>
+<script>
+  (function () {
+    var init = function () {
+      twikoo.init({
+        envId: "https://comment.pangxs.com/",
+        el: "#twikoo-container",
+        lang: "zh-CN",
+        // path 用页面唯一路径,保证每篇文章的评论独立
+        path: window.location.pathname,
+        onCommentLoaded: function () {
+          // 评论加载完后,把「评论数」统计同步到 .comment-count 这类元素
+          try {
+            twikoo.getCommentsCount({
+              envId: "https://comment.pangxs.com/",
+              urls: [window.location.pathname],
+              includeReply: false
+            }).then(function (res) {
+              document.querySelectorAll(".comment-count").forEach(function (el) {
+                el.textContent = (res && res[0] && res[0].count) || 0;
+              });
+            });
+          } catch (e) {}
+        }
+      });
+    };
+    // 加载 SDK,Twikoo 提供 twikoo.all.min.js (含图床/邮件等可选能力)
+    var s = document.createElement("script");
+    s.src = "https://comment.pangxs.com/twikoo.all.min.js";
+    s.async = true;
+    s.onload = init;
+    document.body.appendChild(s);
+  })();
+</script>
 {{- /* Comments area end */ -}}

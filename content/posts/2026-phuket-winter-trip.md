@@ -3,6 +3,7 @@ title: "2026寒假旅行之普吉岛"
 date: 2026-03-18T20:00:00+08:00
 lastmod: 2026-05-22T16:35:00+08:00
 draft: false
+comments: true
 tags: ["泰国", "普吉岛", "东南亚", "旅行"]
 categories: ["东南亚"]
 description: "普吉岛入境、曼谷出境——寒假旺季的物价、日落与潜水遗憾。"
