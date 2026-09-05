@@ -27,8 +27,9 @@
       });
     };
     // 加载 SDK,Twikoo 提供 twikoo.all.min.js (含图床/邮件等可选能力)
+    // 从 jsdelivr CDN 加载 (comment.pangxs.com 是云函数版,不提供静态资源)
     var s = document.createElement("script");
-    s.src = "https://comment.pangxs.com/twikoo.all.min.js";
+    s.src = "https://cdn.jsdelivr.net/npm/twikoo@1.7.20/dist/twikoo.all.min.js";
     s.async = true;
     s.onload = init;
     document.body.appendChild(s);
