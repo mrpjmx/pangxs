@@ -91,12 +91,14 @@ favicon = "/favicon.ico"
 [params.assets.disableScrollBarStyle]
 
 # 主页信息模式(可选)
-[params.homeInfoParams]
-Title = "自留地"
-Content = """
-这里是庞老师的自留地。
-记录飞牛系统折腾 / 摩旅老登运营 / 学校信息化工作 / 偶尔的生活。
-"""
+# 首页顶部「自留地」卡片(已隐藏,2026-09-05)
+# 取消下面整段注释即可恢复
+#[params.homeInfoParams]
+#Title = "自留地"
+#Content = """
+#这里是庞老师的自留地。
+#记录飞牛系统折腾 / 摩旅老登运营 / 学校信息化工作 / 偶尔的生活。
+#"""
 
 # 作者社交账号(按需填写)
 [[params.socialIcons]]
