@@ -90,6 +90,9 @@ env = "production"
 description = "庞老师的自留地 - 记录折腾 / 摩旅 / 工作 / 生活"
 keywords = ["Hugo", "PaperMod", "自留地", "庞老师", "摩旅"]
 
+# 文章页底部上一篇/下一篇导航(庞老师 20:01 要求,放在 tags 后面)
+ShowPostNavLinks = true
+
 # PaperMod 配置
 [params.assets]
 favicon = "/favicon.ico"
