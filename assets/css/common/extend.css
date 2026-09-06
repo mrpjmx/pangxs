@@ -53,16 +53,16 @@ body {
 }
 
 .menu {
-  column-gap: 0.4rem !important;
+  column-gap: 0.7rem !important;
 }
 
 .header-nav {
-  column-gap: 0.4rem !important;
+  column-gap: 0.7rem !important;
 }
 
 .menu a {
   font-size: 16px !important;
-  padding: 0.15rem 0.3rem !important;
+  padding: 0.2rem 0.4rem !important;
 }
 
 /* === 取消导航鼠标 hover 背景变化 === */
@@ -257,7 +257,7 @@ body {
   }
 
   .menu a {
-    padding: 0.15rem 0.3rem !important;
+    padding: 0.2rem 0.4rem !important;
     font-size: 16px !important;
   }
 
@@ -333,7 +333,7 @@ body {
   }
 
   .menu a {
-    padding: 0.15rem 0.3rem !important;
+    padding: 0.2rem 0.4rem !important;
     font-size: 16px !important;
   }
 
