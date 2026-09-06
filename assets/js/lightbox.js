@@ -67,8 +67,13 @@
     });
 
     // 点任意位置关闭（遮罩 / 图片本身 / 关闭按钮）
-    overlay.addEventListener('click', function () {
-        close();
+    // 同时绑 click 和 pointerup，防止浏览器吞 click
+    function onOverlayClick() { close(); }
+    overlay.addEventListener('click', onOverlayClick);
+    overlay.addEventListener('pointerup', function (ev) {
+        // 只在点亮之后才触发 pointerup（避免误触发拖拽结束）
+        if (ev.pointerType === 'mouse' && ev.button !== 0) return;
+        onOverlayClick();
     });
 
     // Esc 关闭
