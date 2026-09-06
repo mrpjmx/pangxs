@@ -5,6 +5,20 @@
  * 主题本体不动,改这里只影响本地
  */
 
+/* === 电脑端:导航字体 16px(庞老师 21:24 要求) === */
+.menu a {
+  font-size: 16px !important;
+}
+
+/* === 取消导航鼠标 hover 背景(庞老师 21:24 要求) === */
+.menu a:hover,
+.menu a:focus,
+.menu .active {
+  background: transparent !important;
+  color: var(--primary) !important;
+  text-decoration: none !important;
+}
+
 /* === 电脑端:文章页 H1/H2 字号压小 === */
 /* PaperMod 默认 .post-content h1 ≈ 2.0rem,h2 ≈ 1.5rem,正文里偏大 */
 
@@ -155,7 +169,7 @@
 
   .menu a {
     padding: 0.3rem 0.4rem !important;
-    font-size: 0.9rem !important;
+    font-size: 18px !important;
   }
 
   .post-entry,
@@ -227,7 +241,7 @@
 
   .menu a {
     padding: 0.25rem 0.3rem !important;
-    font-size: 0.85rem !important;
+    font-size: 16px !important;
   }
 
   .first-entry {
