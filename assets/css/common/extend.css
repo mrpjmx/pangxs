@@ -19,6 +19,11 @@
   padding-top: 0.5rem !important;
 }
 
+/* 隐藏描述内容(庞老师 19:40 要求) */
+.post-description {
+  display: none !important;
+}
+
 .post-content h1 {
   font-size: 1.4rem !important;
   line-height: 1.3 !important;
