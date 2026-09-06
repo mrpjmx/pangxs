@@ -46,11 +46,8 @@ label = "简体中文"
 weight = 1
 title = "MR.PANG"
 
-# 英文备用
-[languages.en]
-label = "English"
-weight = 2
-title = "MR.PANG"
+# 2026-09-06: 移除英文语言配置 — 英文站无内容, 导航 En 切换按钮取消
+# (删掉 [languages.en] 后 PaperMod 不再渲染 lang-menu)
 
 # 全站菜单
 [[menu.main]]
