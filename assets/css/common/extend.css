@@ -210,7 +210,7 @@ body {
 .post-entry .entry-header h2 {
   font-size: 1.25rem !important;
   line-height: 1.3 !important;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
 }
 
 /* === 手机端(<= 768px)再小一档 === */
@@ -280,7 +280,7 @@ body {
   .post-entry h2,
   .post-entry .entry-header h2 {
     font-size: 1.125rem !important;
-    font-weight: 300 !important;
+    font-weight: 500 !important;
   }
 
   /* 手机端 paginav 上下堆叠,避免 width:50% 挤掉看不见(庞老师 21:13 反馈) */
