@@ -66,9 +66,12 @@
         });
     });
 
-    // 点任意位置关闭（遮罩 / 图片本身 / 关闭按钮）
-    overlay.addEventListener('click', function () {
-        close();
+    // 点遮罩或关闭按钮关闭
+    overlay.addEventListener('click', function (ev) {
+        // 点图片本身不关；点遮罩或按钮才关
+        if (ev.target === overlay || ev.target === closeBtn) {
+            close();
+        }
     });
 
     // Esc 关闭
