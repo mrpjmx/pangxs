@@ -62,8 +62,14 @@
 .paginav .title {
   letter-spacing: normal !important;
   text-transform: none !important;
-  font-size: 0.85rem !important;
-  color: var(--secondary) !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: var(--primary) !important;
+}
+
+.paginav a span:not(.title) {
+  font-size: 20px !important;
+  color: var(--primary) !important;
 }
 
 .post-content h1 {
