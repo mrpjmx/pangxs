@@ -6,6 +6,10 @@
  */
 
 /* === 电脑端:导航字体 16px(庞老师 21:24 要求) === */
+:root {
+  --header-height: 45px !important;
+}
+
 .menu a {
   font-size: 16px !important;
 }
