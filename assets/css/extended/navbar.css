@@ -31,10 +31,15 @@
         min-width: 0;
     }
 
-    /* 菜单项之间间距收紧 */
+    /* 菜单项间距放宽 — 继承 PaperMod 默认 var(--gap)=24px, 跟手机端一致不拥挤 */
     .menu {
-        column-gap: 0.5rem !important;
+        column-gap: var(--gap);
         flex-shrink: 0;
+    }
+
+    /* 菜单项加一点点左右 padding, 字与字之间更开 */
+    .menu a {
+        padding: 0.3rem 0.6rem;
     }
 }
 
