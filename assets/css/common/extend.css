@@ -73,12 +73,12 @@ body {
   font-size: 16px !important;
   line-height: 1.75 !important;
   font-weight: 100 !important;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace !important;
 }
 
-/* 全站 body 加中文字体栈(庞老师 21:58 要求,中文也跟著 font-weight 变细) */
+/* 全站 body 加中文字体栈(庞老师 21:59 要求,参考 iduck.top handsom 主题样式) */
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+  font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace !important;
 }
 
 /* 导航到正文间距进一步收小(PaperMod 默认 4rem,之前 1.2rem 还偏大) */
