@@ -1,0 +1,47 @@
+/* 顶部导航栏修复 */
+
+/* 滚动后固定到顶部 + 微阴影 */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--theme);
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    transition: box-shadow 0.2s ease;
+}
+
+.header.nav-scrolled {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 8%);
+}
+
+[data-theme="dark"] .header.nav-scrolled {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* 桌面端：强制 nav 单行，菜单再多也不 wrap 到第二行被切掉 */
+@media screen and (min-width: 901px) {
+    .header-nav {
+        flex-wrap: nowrap !important;
+    }
+
+    /* logo 区允许压缩，菜单区不被挤掉 */
+    .logo {
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    /* 菜单项之间间距收紧 */
+    .menu {
+        column-gap: 0.5rem !important;
+        flex-shrink: 0;
+    }
+}
+
+/* 窄屏：菜单允许水平滚动不溢出 */
+@media screen and (max-width: 900px) {
+    .menu {
+        overflow-x: auto;
+        max-width: 60vw;
+    }
+}
