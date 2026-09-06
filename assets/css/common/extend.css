@@ -19,6 +19,11 @@
   margin-bottom: 1rem !important;
 }
 
+/* === 首页正文背景改浅灰(庞老师 21:41 要求,文章页背景保持卡片白) === */
+body {
+  background: var(--code-bg) !important;
+}
+
 .menu a {
   font-size: 16px !important;
 }
