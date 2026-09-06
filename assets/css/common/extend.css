@@ -96,7 +96,7 @@
 /* === 手机端(<= 768px)再小一档 === */
 @media screen and (max-width: 768px) {
   .main {
-    padding-top: 1rem !important;
+    padding-top: 0.5rem !important;
   }
 
   .first-entry {
