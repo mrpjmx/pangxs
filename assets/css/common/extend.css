@@ -202,6 +202,21 @@
   .post-entry .entry-header h2 {
     font-size: 1.125rem !important;
   }
+
+  /* 手机端 paginav 上下堆叠,避免 width:50% 挤掉看不见(庞老师 21:13 反馈) */
+  .paginav {
+    flex-direction: column !important;
+    gap: 0.5rem !important;
+  }
+
+  .paginav .prev,
+  .paginav .next {
+    width: 100% !important;
+  }
+
+  .paginav .next {
+    margin-inline-start: 0 !important;
+  }
 }
 
 /* === 小屏手机(<= 480px)更紧凑 === */
