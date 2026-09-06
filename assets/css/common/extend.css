@@ -76,7 +76,7 @@ body {
 
 /* 导航到正文间距进一步收小(PaperMod 默认 4rem,之前 1.2rem 还偏大) */
 .main {
-  padding-top: 0.5rem !important;
+  padding-top: 1rem !important;
 }
 
 /* 隐藏描述内容(庞老师 19:40 要求) */
