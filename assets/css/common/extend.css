@@ -39,7 +39,7 @@
 .post-entry h1,
 .post-entry h2,
 .post-entry .entry-header h2 {
-  font-size: 1.5rem !important;
+  font-size: 1.25rem !important;
   line-height: 1.3 !important;
 }
 
@@ -95,7 +95,7 @@
   .post-entry h1,
   .post-entry h2,
   .post-entry .entry-header h2 {
-    font-size: 1.25rem !important;
+    font-size: 1.125rem !important;
   }
 }
 
