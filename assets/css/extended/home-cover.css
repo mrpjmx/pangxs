@@ -1,0 +1,22 @@
+/* 仅首页文章列表 entry-cover: 21:9 容器 + object-fit: cover */
+
+/* 通过 extend_head.html 的 JS 给 body 加 .is-home, 限定只首页生效 */
+.is-home .entry-cover {
+    aspect-ratio: 21 / 9;
+    overflow: hidden;
+}
+
+.is-home .entry-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* 小屏降到 16:9, 避免手机上 21:9 太扁 */
+@media (max-width: 768px) {
+    .is-home .entry-cover {
+        aspect-ratio: 16 / 9;
+    }
+}
