@@ -10,6 +10,15 @@
   --header-height: 45px !important;
 }
 
+/* === 文章页 .post-content 加卡片背景(庞老师 21:37 要求,与首页 .post-entry 一致) === */
+.post-content {
+  background: var(--entry) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
+
 .menu a {
   font-size: 16px !important;
 }
