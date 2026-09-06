@@ -1,0 +1,6 @@
+{{- if and .IsPage (not .Site.Params.disableLightbox) -}}
+  {{- $lightboxJs := resources.Get "js/lightbox.js" -}}
+  {{- if $lightboxJs -}}
+    <script defer src="{{ $lightboxJs.RelPermalink }}"></script>
+  {{- end -}}
+{{- end -}}
