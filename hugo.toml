@@ -65,26 +65,28 @@ name = "文章"
 url = "/posts/"
 weight = 2
 
-[[menu.main]]
-identifier = "tags"
-name = "标签"
-url = "/tags/"
-weight = 3
+# 2026-09-06: 菜单砍到 3 项(首页 / 文章 / 关于),手机端首屏不再被导航条吃掉
+# 隐藏标签 / 归档 / 搜索 — 页面仍在,只是不放菜单;恢复把 # 去掉即可
+#[[menu.main]]
+#identifier = "tags"
+#name = "标签"
+#url = "/tags/"
+#weight = 3
 
 # 注: list 页用 /tags/ /categories/ /series/(英文)
 # term 详情页用 /标签/ /分类/ /系列/(中文) — Hugo permalinks 配置决定
 
-[[menu.main]]
-identifier = "archive"
-name = "归档"
-url = "/archives/"
-weight = 4
+#[[menu.main]]
+#identifier = "archive"
+#name = "归档"
+#url = "/archives/"
+#weight = 4
 
-[[menu.main]]
-identifier = "search"
-name = "搜索"
-url = "/search/"
-weight = 5
+#[[menu.main]]
+#identifier = "search"
+#name = "搜索"
+#url = "/search/"
+#weight = 5
 
 [[menu.main]]
 identifier = "about"
