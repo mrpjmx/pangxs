@@ -39,6 +39,11 @@
   margin-bottom: 0.6em !important;
 }
 
+/* figure 下边距收小 — 庞老师 19:47 反馈图描述到下一段空白太大 */
+.post-content figure {
+  margin-bottom: 0.4em !important;
+}
+
 .post-content h1 {
   font-size: 1.4rem !important;
   line-height: 1.3 !important;
