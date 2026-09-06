@@ -38,9 +38,6 @@
     justify-content: center;
     padding: 2rem;
     cursor: zoom-out;
-    /* 禁止触屏手势缩放 / 唤出图片菜单 */
-    touch-action: manipulation;
-    -webkit-touch-callout: none;
 }
 
 .lightbox-overlay.is-open {
@@ -58,10 +55,6 @@
     -webkit-user-drag: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    /* 让 img 在移动端不拦截双击缩放手势 */
-    touch-action: manipulation;
-    -webkit-touch-callout: none;
-    pointer-events: auto;
 }
 
 .lightbox-caption {
