@@ -53,10 +53,15 @@
 /* first-entry 内部元素重置 */
 .is-home .first-entry .entry-header,
 .is-home .first-entry .entry-content,
-.is-home .first-entry .entry-footer,
-.is-home .first-entry > a.entry-link {
+.is-home .first-entry .entry-footer {
     position: static;
     z-index: auto;
+}
+
+/* entry-link 恢复 PaperMod 默认绝对定位 (盖满整个卡片, 点击进文章) */
+.is-home .first-entry > a.entry-link {
+    position: absolute;
+    z-index: 1;
 }
 
 .is-home .first-entry .entry-header h2 {
