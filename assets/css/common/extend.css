@@ -140,13 +140,13 @@ body {
 .paginav .title {
   letter-spacing: normal !important;
   text-transform: none !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   font-weight: 400 !important;
   color: var(--primary) !important;
 }
 
 .paginav a span:not(.title) {
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: var(--primary) !important;
 }
 
