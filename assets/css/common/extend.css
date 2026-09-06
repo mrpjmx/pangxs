@@ -52,9 +52,17 @@ body {
   background: var(--code-bg) !important;
 }
 
+.menu {
+  column-gap: 0.2rem !important;
+}
+
+.header-nav {
+  column-gap: 0.2rem !important;
+}
+
 .menu a {
   font-size: 16px !important;
-  padding: 0.2rem 0.4rem !important;
+  padding: 0.1rem 0.2rem !important;
 }
 
 /* === 取消导航鼠标 hover 背景变化 === */
@@ -249,7 +257,7 @@ body {
   }
 
   .menu a {
-    padding: 0.2rem 0.3rem !important;
+    padding: 0.1rem 0.2rem !important;
     font-size: 16px !important;
   }
 
@@ -325,7 +333,7 @@ body {
   }
 
   .menu a {
-    padding: 0.2rem 0.3rem !important;
+    padding: 0.1rem 0.2rem !important;
     font-size: 16px !important;
   }
 
