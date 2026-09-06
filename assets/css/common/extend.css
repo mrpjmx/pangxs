@@ -62,14 +62,27 @@
 .paginav .title {
   letter-spacing: normal !important;
   text-transform: none !important;
-  font-size: 20px !important;
+  font-size: 18px !important;
   font-weight: 600 !important;
   color: var(--primary) !important;
 }
 
 .paginav a span:not(.title) {
-  font-size: 20px !important;
+  font-size: 18px !important;
   color: var(--primary) !important;
+}
+
+/* 上一篇贴左 / 下一篇贴右分两边对齐(庞老师 20:10 要求) */
+.paginav .prev {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  margin-inline-start: 0 !important;
+}
+
+.paginav .next {
+  text-align: right !important;
+  justify-content: flex-end !important;
+  margin-inline-start: auto !important;
 }
 
 .post-content h1 {
