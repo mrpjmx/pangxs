@@ -16,7 +16,7 @@
   border: 1px solid var(--border) !important;
   border-radius: var(--radius) !important;
   padding: 1.5rem !important;
-  margin-bottom: 1rem !important;
+  margin: 10px 0 !important;
 }
 
 /* === 标题区也包含进卡片(庞老师 21:43 要求) === */
