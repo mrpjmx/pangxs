@@ -81,6 +81,17 @@ body {
   font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace !important;
 }
 
+/* 首页文章列表字体也走 iduck.top 栈(庞老师 22:03 要求) */
+.first-entry,
+.first-entry * ,
+.post-entry,
+.post-entry *,
+.post-title,
+.post-title-row,
+.post-meta {
+  font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace !important;
+}
+
 /* 导航到正文间距进一步收小(PaperMod 默认 4rem,之前 1.2rem 还偏大) */
 .main {
   padding-top: 1rem !important;
