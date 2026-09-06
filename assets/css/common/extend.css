@@ -108,7 +108,7 @@ body {
 
 /* 文章页单独 header→main 间距 +8px(庞老师 22:39 要求,首页不动) */
 .main:has(.post-single) {
-  padding-top: 1.75rem !important;
+  padding-top: 2rem !important;
 }
 
 /* 隐藏描述内容(庞老师 19:40 要求) */
