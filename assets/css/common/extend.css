@@ -8,13 +8,16 @@
 /* === 电脑端:导航字体 16px(庞老师 21:24 要求) === */
 .menu a {
   font-size: 16px !important;
+  padding: 0.3rem 0.6rem !important;
+  border-radius: var(--radius) !important;
+  background: var(--code-bg) !important;
 }
 
-/* === 取消导航鼠标 hover 背景(庞老师 21:24 要求) === */
+/* === 取消导航鼠标 hover 背景变化(默认就有背景,hover 不动) === */
 .menu a:hover,
 .menu a:focus,
 .menu .active {
-  background: transparent !important;
+  background: var(--code-bg) !important;
   color: var(--primary) !important;
   text-decoration: none !important;
 }
