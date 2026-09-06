@@ -25,6 +25,7 @@
   border: 1px solid var(--border) !important;
   border-radius: var(--radius) !important;
   padding: 1.5rem !important;
+  margin-top: 0.5rem !important;
   margin-bottom: 1rem !important;
   overflow: hidden !important;
 }
