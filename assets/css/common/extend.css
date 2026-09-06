@@ -19,6 +19,33 @@
   margin-bottom: 1rem !important;
 }
 
+/* === 标题区也包含进卡片(庞老师 21:43 要求) === */
+.post-single {
+  background: var(--entry) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius) !important;
+  padding: 1.5rem !important;
+  margin-bottom: 1rem !important;
+  overflow: hidden !important;
+}
+
+.post-single > .post-header {
+  border: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 0 1rem 0 !important;
+  margin-bottom: 1rem !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.post-single > .post-content {
+  border: none !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin-bottom: 0 !important;
+}
+
 /* === 首页正文背景改浅灰(庞老师 21:41 要求,文章页背景保持卡片白) === */
 body {
   background: var(--code-bg) !important;
