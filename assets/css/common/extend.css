@@ -47,6 +47,11 @@
   margin-bottom: 0 !important;
 }
 
+.post-single > .post-content > p:first-child,
+.post-single > .post-content > *:first-child {
+  margin-top: 0 !important;
+}
+
 /* === 首页正文背景改浅灰(庞老师 21:41 要求,文章页背景保持卡片白) === */
 body {
   background: var(--code-bg) !important;
