@@ -8,9 +8,15 @@
 /* === 电脑端:文章页 H1/H2 字号压小 === */
 /* PaperMod 默认 .post-content h1 ≈ 2.0rem,h2 ≈ 1.5rem,正文里偏大 */
 
-/* 文章正文 18px → 16px */
+/* 文章正文 18px(桌面)/ 16px(手机)/ 15px(小屏) — 加大阅读体验 */
 .post-content {
-  font-size: 16px !important;
+  font-size: 18px !important;
+  line-height: 1.75 !important;
+}
+
+/* 导航到正文间距收小(PaperMod 默认 4rem 太宽) */
+.main {
+  padding-top: 1.2rem !important;
 }
 
 .post-content h1 {
@@ -93,7 +99,8 @@
   }
 
   .post-content {
-    font-size: 15px !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
   }
 
   .post-content h1 {
@@ -138,7 +145,8 @@
   }
 
   .post-content {
-    font-size: 14px !important;
+    font-size: 15px !important;
+    line-height: 1.65 !important;
   }
 
   .post-content h1 {
