@@ -50,3 +50,9 @@
         max-width: 60vw;
     }
 }
+
+/* 导航栏与下方内容间距收窄: .main 顶部 padding 从 var(--gap) 减半
+   (首页文章列表 / 文章页 / 归档等所有页面统一生效, 桌面 24→12px, 手机 14→7px) */
+.main {
+    padding-top: calc(var(--gap) / 2);
+}
