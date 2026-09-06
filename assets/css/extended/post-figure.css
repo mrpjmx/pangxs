@@ -1,0 +1,26 @@
+/* 文章正文图片: alt 文字显示在图下方 */
+
+.post-figure {
+    margin: 0.25rem 0 1rem;
+    text-align: center;
+}
+
+.post-figure img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    /* 覆盖 PaperMod 默认的 .md-content img { margin: 1rem 0 } */
+    margin: 0 !important;
+}
+
+.post-figure figcaption,
+.md-content figure.post-figure > figcaption {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: var(--secondary);
+    line-height: 1.4;
+    font-weight: 400;
+    font-style: normal;
+}
