@@ -1,0 +1,19 @@
+/* 导航栏固定到顶部，滚动后加阴影 */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--theme);
+    backdrop-filter: saturate(180%) blur(8px);
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    transition: box-shadow 0.2s ease;
+}
+
+.header.nav-scrolled {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 8%);
+}
+
+/* 暗色模式下阴影更明显 */
+[data-theme="dark"] .header.nav-scrolled {
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.4);
+}

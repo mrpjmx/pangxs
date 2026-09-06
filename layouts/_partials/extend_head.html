@@ -1,0 +1,16 @@
+<script>
+(function() {
+    var header = document.querySelector('.header');
+    if (!header) return;
+    var threshold = 8;
+    function update() {
+        if (window.scrollY > threshold) {
+            header.classList.add('nav-scrolled');
+        } else {
+            header.classList.remove('nav-scrolled');
+        }
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+})();
+</script>
