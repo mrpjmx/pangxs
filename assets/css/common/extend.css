@@ -44,22 +44,26 @@
   margin-bottom: 0.4em !important;
 }
 
-/* 上一篇/下一篇导航:符号和文字同行(庞老师 20:03 要求) */
+/* 上一篇/下一篇导航:符号和文字同行,去掉大块背景(庞老师 20:03/20:05 要求) */
 .paginav {
-  display: flex !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0.5rem 0 !important;
+}
+
+.paginav a {
   flex-direction: row !important;
-  gap: 1rem !important;
-  font-size: 0.95rem !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  padding: 0.4rem 0 !important;
+  width: 50% !important;
 }
 
-.paginav .prev,
-.paginav .next {
-  flex: 1 !important;
-}
-
-.paginav .title,
-.paginav span:last-child {
-  display: inline !important;
+.paginav .title {
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  font-size: 0.85rem !important;
+  color: var(--secondary) !important;
 }
 
 .post-content h1 {
