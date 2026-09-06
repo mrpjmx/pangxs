@@ -25,3 +25,56 @@
 .post-single .entry-cover {
     display: none;
 }
+
+/* 首页 first-entry 样式与 post-entry 统一 */
+.is-home .first-entry {
+    position: relative;
+    margin-bottom: var(--gap);
+    padding: var(--gap);
+    background: var(--entry);
+    border-radius: var(--radius);
+    transition: transform 0.25s ease;
+    border: 1px solid var(--border);
+    min-height: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: inherit;
+    aspect-ratio: auto;
+    overflow: visible;
+    display: block;
+}
+
+.is-home .first-entry:hover,
+.is-home .first-entry:focus-within {
+    transform: translateY(-2px);
+    border-color: var(--tertiary);
+}
+
+/* first-entry 内部元素重置 */
+.is-home .first-entry .entry-header,
+.is-home .first-entry .entry-content,
+.is-home .first-entry .entry-footer,
+.is-home .first-entry > a.entry-link {
+    position: static;
+    z-index: auto;
+}
+
+.is-home .first-entry .entry-header h2 {
+    font-size: 24px;
+    color: var(--primary);
+    text-shadow: none;
+}
+
+.is-home .first-entry .entry-content {
+    color: var(--secondary);
+    text-shadow: none;
+    -webkit-line-clamp: 2;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.is-home .first-entry .entry-footer {
+    color: var(--secondary);
+    text-shadow: none;
+    font-size: 13px;
+}
