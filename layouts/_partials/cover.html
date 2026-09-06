@@ -3,7 +3,7 @@
 {{- $imgdl := (.Params.cover.image) | absURL }}
 {{- $alt := (.Params.cover.alt | default .Params.cover.caption | plainify) }}
 {{- $loading := cond $.IsSingle "eager" "lazy" }}
-<figure class="entry-cover" style="--cover-bg: url('{{ $imgdl }}')">
+<figure class="entry-cover">
     <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
     {{- if $.IsSingle }}
         {{ with .Params.cover.caption -}}
