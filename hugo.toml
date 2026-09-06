@@ -26,14 +26,25 @@ pagination.pagerSize = 10
 # 中文为主
 defaultContentLanguage = "zh-cn"
 
+# 启用 series 等自定义 taxonomy
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# 中文 permalink 映射（保持中文 URL；list 页仍用英文 /categories/ 等）
+[permalinks]
+posts = "/posts/:slug/"
+page = "/:slug/"
+categories = "/分类/:slug/"
+tags = "/标签/:slug/"
+series = "/系列/:slug/"
+
 # 中文菜单
 [languages.zh-cn]
 label = "简体中文"
 weight = 1
 title = "MR.PANG"
-taxonomies.category = "分类"
-taxonomies.tag = "标签"
-taxonomies.series = "系列"
 
 # 英文备用
 [languages.en]
@@ -59,6 +70,9 @@ identifier = "tags"
 name = "标签"
 url = "/tags/"
 weight = 3
+
+# 注: list 页用 /tags/ /categories/ /series/(英文)
+# term 详情页用 /标签/ /分类/ /系列/(中文) — Hugo permalinks 配置决定
 
 [[menu.main]]
 identifier = "archive"
@@ -186,10 +200,6 @@ baseName = "index"
 [outputFormats.JSON]
 mediaType = "application/json"
 
-# 别名
-[permalinks]
-posts = "/posts/:slug/"
-page = "/:slug/"
 
 # 服务
 [server]
@@ -206,6 +216,6 @@ Referrer-Policy = "strict-origin-when-cross-origin"
 disqus = { disable = true }
 googleAnalytics = { disable = true }
 instagram = { disable = true }
-twitter = { disable = true }
+x = { disable = true }
 vimeo = { disable = true }
 youtube = { disable = true }

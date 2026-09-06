@@ -1,0 +1,32 @@
+{{- define "main" }}
+
+{{- $typeTitle := "Taxonomy" }}
+{{- if eq .Type "categories" }}{{ $typeTitle = "分类" }}{{ end }}
+{{- if eq .Type "tags" }}{{ $typeTitle = "标签" }}{{ end }}
+{{- if eq .Type "series" }}{{ $typeTitle = "系列" }}{{ end }}
+
+{{- if .Title }}
+<header class="page-header">
+    <h1>{{ $typeTitle }}</h1>
+    {{- if .Description }}
+    <div class="post-description">
+        {{ .Description }}
+    </div>
+    {{- end }}
+</header>
+{{- end }}
+
+<ul class="terms-tags">
+    {{- $type := .Type }}
+        {{- range $key, $value := .Data.Terms.Alphabetical }}
+            {{- $name := .Name }}
+            {{- $count := .Count }}
+            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .LinkTitle }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
+            </li>
+        {{- end }}
+    {{- end }}
+</ul>
+
+{{- end }}{{/* end main */ -}}
