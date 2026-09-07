@@ -83,10 +83,11 @@ body {
 /* PaperMod 默认 .post-content h1 ≈ 2.0rem,h2 ≈ 1.5rem,正文里偏大 */
 
 /* 文章正文 16px(桌面)/ 15px(手机)/ 14px(小屏) — 庞老师 19:41 定 16px */
+/* 字重 300 → 400(庞老师 9-07 反馈 300 还不够看) */
 .post-content {
   font-size: 16px !important;
   line-height: 1.75 !important;
-  font-weight: 300 !important;
+  font-weight: 400 !important;
   font-family: "Source Sans Pro", "Hiragino Sans GB", "Microsoft Yahei", SimSun, Helvetica, Arial, Sans-serif, monospace !important;
 }
 
